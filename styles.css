@@ -5,17 +5,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: skyblue;
+    background-color: #aed6f1; /* Light blue background */
 }
 
 .container {
     padding: 20px;
-    background-color: white;
+    background-color: #3498db; /* Medium blue container background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    color: blue;
-    text-align: center;
+    color: #2980b9; /* Dark blue heading color */
 }
+
+.bio {
+    color: #154360; /* Navy blue bio text color */
+    font-style: italic;
+}
+
