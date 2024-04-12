@@ -9,16 +9,15 @@ body {
 }
 
 .container {
-    padding: 20px;
+    padding: 40px; /* Increased padding for more space */
     background-color: #FFFFFF; /* White container background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: absolute; /* Position absolutely relative to the nearest positioned ancestor */
     top: 20px; /* Distance from the top of the viewport */
-    left: 20px; /* Distance from the right of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
 }
-
 .header {
     margin-bottom: 20px; /* Add spacing between header and profile picture */
 }
