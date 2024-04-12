@@ -35,19 +35,19 @@ h1 {
 
 .profile-picture {
     position: absolute;
-    top: 20px; /* Adjust top positioning as needed */
-    left: 20px; /* Adjust left positioning as needed */
+    top: 30px; /* Adjust top positioning as needed */
+    left: 30px; /* Adjust left positioning as needed */
     border: 5px solid #2980b9; /* Blue border */
     border-radius: 50%; /* Rounded border for circular shape */
     overflow: hidden; /* Hide overflow for perfect circle */
-    width: 120px; /* Increase the width of the profile picture */
-    height: 120px; /* Increase the height of the profile picture */
+    width: 170px; /* Increase the width of the profile picture */
+    height: 170px; /* Increase the height of the profile picture */
 }
 
 .profile-picture img {
     width: 100%; /* Make the image fill the container */
     height: 100%; /* Make the image fill the container */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
-    border-radius: 50%; /* Rounded shape for image (same as container) */
+    border-radius: 40%; /* Rounded shape for image (same as container) */
 }
 
