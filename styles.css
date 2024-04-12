@@ -9,18 +9,20 @@ body {
 }
 
 .container {
-    padding: 25px; /* Increased padding for more space */
+    display: flex; /* Display as a flex container */
+    align-items: center; /* Vertically center content */
     background-color: #FFFFFF; /* White container background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 25px; /* Increased padding for more space */
     position: absolute; /* Position absolutely relative to the nearest positioned ancestor */
     top: 20px; /* Distance from the top of the viewport */
     left: 20px; /* Distance from the left of the viewport */
 }
 
 .header {
-    margin-bottom: 20px; /* Add spacing between header and profile picture */
+    flex: 2; /* Take up 2/3 of the container width */
+    margin-left: 20px; /* Add spacing between profile picture and bio */
 }
 
 h1 {
@@ -30,18 +32,17 @@ h1 {
 .bio {
     color: #154360; /* Navy blue bio text color */
     font-style: italic;
-    margin-top: 120px; /* Add margin to create space below the image */
+    margin-top: 10px; /* Add margin to create space below the heading */
 }
 
 .profile-picture {
-    position: absolute;
-    top: 30px; /* Adjust top positioning as needed */
-    left: 30px; /* Adjust left positioning as needed */
+    flex: 1; /* Take up 1/3 of the container width */
+    position: relative; /* Position relative to allow absolute positioning of the image */
+    width: 150px; /* Increase the width of the profile picture */
+    height: 150px; /* Increase the height of the profile picture */
     border: 5px solid #2980b9; /* Blue border */
     border-radius: 50%; /* Rounded border for circular shape */
     overflow: hidden; /* Hide overflow for perfect circle */
-    width: 150px; /* Increase the width of the profile picture */
-    height: 150px; /* Increase the height of the profile picture */
 }
 
 .profile-picture img {
