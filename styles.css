@@ -29,6 +29,7 @@ h1 {
 .bio {
     color: #154360; /* Navy blue bio text color */
     font-style: italic;
+    margin-top: 120px; /* Add margin to create space below the image */
 }
 
 .profile-picture {
