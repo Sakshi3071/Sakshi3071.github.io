@@ -14,6 +14,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative; /* Enable positioning for child elements */
+}
+
+.header {
+    margin-bottom: 20px; /* Add spacing between header and profile picture */
 }
 
 h1 {
@@ -24,4 +29,23 @@ h1 {
     color: #154360; /* Navy blue bio text color */
     font-style: italic;
 }
+
+.profile-picture {
+    position: absolute;
+    top: 20px; /* Adjust top positioning as needed */
+    right: 20px; /* Adjust right positioning as needed */
+    border: 5px solid #2980b9; /* Blue border */
+    border-radius: 50%; /* Rounded border for circular shape */
+    overflow: hidden; /* Hide overflow for perfect circle */
+    width: 100px; /* Set width of the profile picture */
+    height: 100px; /* Set height of the profile picture */
+}
+
+.profile-picture img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 50%; /* Rounded shape for image (same as container) */
+}
+
 
