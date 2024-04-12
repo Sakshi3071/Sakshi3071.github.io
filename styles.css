@@ -17,7 +17,6 @@ body {
     position: absolute; /* Position absolutely relative to the nearest positioned ancestor */
     top: 20px; /* Distance from the top of the viewport */
     left: 20px; /* Distance from the left of the viewport */
-    right: auto; /* Reset the right position to auto */
 }
 
 .header {
@@ -51,5 +50,4 @@ h1 {
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 50%; /* Rounded shape for image (same as container) */
 }
-
 
