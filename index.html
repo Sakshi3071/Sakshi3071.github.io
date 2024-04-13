@@ -6,50 +6,67 @@
     <title>Sakshi Satre</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .container {
-            display: flex;
-            align-items: center;
-        }
-        .profile-picture {
-            flex: 1;
-            margin-right: 20px;
-        }
-        .header {
-            flex: 2;
-        }
-        .bio {
-            font-size: 14px;
-            margin-top: 10px;
+        /* Additional styles for responsiveness */
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-picture {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .bio {
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="profile-picture">
-            <img src="Screenshot 2023-06-06 150530.png" alt="Sakshi Satre's Profile Picture">
+            <img src="Screenshot 2023-06-06 150530.png" alt="Sakshi Satre's Profile Picture" id="profile-image">
         </div>
         <div class="header">
             <h1>Sakshi Satre</h1>
-            <p class="bio">
-                Data Skills and AI intern at <a href="https://www.ybifoundation.org" target="_blank">YBI Foundation</a> |
+            <p class="bio" id="bio">
+                Data Skills and AI intern at <a href="https://www.ybifoundation.org/" target="_blank">YBI Foundation</a> |
                 Aspiring Data Scientist | Statistician
             </p>
             <p class="contact">
-                Email: <a href="mailto:satresakshi3071@gmail.com">Sakshi@gmail.com</a>
+                📧 Email: <a href="mailto:satresakshi3071@gmail.com">Sakshi</a>
             </p>
             <p class="links">
-                <a href="https://www.linkedin.com/in/sakshisatre" target=" blank">
-                    <img src="Linkedin.jpg" alt="Linkedin Logo" class="logo-icon" style="width: 20px;">SakshiSatre
+                <a href="https://www.linkedin.com/in/sakshisatre/" target="_blank">
+                    <img src="Linkedin.jpg" alt="Linkedin Logo" class="logo-icon" style="width: 20px;">
                 </a>
-                <a href="https://www.kaggle.com/sakshisatre" target=" blank">
-                    <img src="kaggle-logo.jpg" alt="Kaggle Logo" class="logo-icon" style="width: 20px;">SakshiSatre
+                |  <a href="https://www.kaggle.com/sakshisatre/" target="_blank">
+                    <img src="kaggle-logo.jpg" alt="Kaggle Logo" class="logo-icon" style="width: 20px;">
                 </a>
-                <a href="https://github.com/Sakshi3071" target=" blank">
-                    <img src="Github-logo.jpg" alt="GitHub Logo" class="logo-icon" style="width: 22px;">Sakshi3071
+                |  <a href="https://github.com/Sakshi3071/" target="_blank">
+                    <img src="Github-logo.jpg" alt="GitHub Logo" class="logo-icon" style="width: 22px;">
                 </a>
             </p>
         </div>
     </div>
+    <script>
+        // JavaScript for interactivity
+        const bioParagraph = document.getElementById('bio');
+
+        // Function to toggle bio visibility
+        bioParagraph.addEventListener('click', () => {
+            bioParagraph.classList.toggle('hidden');
+        });
+
+        // Function to change profile image on hover
+        const profileImage = document.getElementById('profile-image');
+        profileImage.addEventListener('mouseenter', () => {
+            profileImage.src = 'hovered-profile-image.png';
+        });
+        profileImage.addEventListener('mouseleave', () => {
+            profileImage.src = 'Screenshot 2023-06-06 150530.png';
+        });
+    </script>
 </body>
 </html>
 
