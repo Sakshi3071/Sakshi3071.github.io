@@ -48,8 +48,10 @@
             color: #2980b9; /* Dark blue link color */
             text-decoration: none;
         }
-
-        .logo-icon {
+.links a img.logo-icon {
+    text-decoration: none; /* Remove underline for logo image */
+}
+.logo-icon {
             width: 20px;
             margin: 0 5px;
         }
